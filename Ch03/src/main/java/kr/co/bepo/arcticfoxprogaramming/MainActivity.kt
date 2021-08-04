@@ -3,24 +3,21 @@ package kr.co.bepo.arcticfoxprogaramming
 import android.os.Bundle
 import android.view.View
 import androidx.appcompat.app.AppCompatActivity
-import kr.co.bepo.arcticfoxprogaramming.databinding.ActivityMainBinding
+import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
-
-    private val binding: ActivityMainBinding by lazy { ActivityMainBinding.inflate(layoutInflater) }
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(binding.root)
+        setContentView(R.layout.activity_main)
     }
 
-    fun convertCurrency(view: View) = with(binding){
-        if (dollarText.text.isNotEmpty()) {
-            val dollarValue = dollarText.text.toString().toFloat()
+    fun convertCurrency(view: View) {
+        if (dollar_text.text.isNotEmpty()) {
+            val dollarValue = dollar_text.text.toString().toFloat()
             val euroValue = dollarValue * 0.85f
-            textView.text = euroValue.toString()
+            text_view.text = euroValue.toString()
         } else {
-            textView.text = getString(R.string.no_value)
+            text_view.text = getString(R.string.no_value)
         }
     }
 }
