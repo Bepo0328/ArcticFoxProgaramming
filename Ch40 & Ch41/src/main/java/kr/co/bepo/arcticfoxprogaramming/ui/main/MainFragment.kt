@@ -5,6 +5,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import kr.co.bepo.arcticfoxprogaramming.databinding.MainFragmentBinding
 
@@ -30,12 +31,15 @@ class MainFragment : Fragment() {
         super.onActivityCreated(savedInstanceState)
         viewModel = ViewModelProvider(this).get(MainViewModel::class.java)
 
-        binding.resultText.text = viewModel.getResult().toString()
+        val resultObserver = Observer<Float> { result ->
+            binding.resultText.text = result.toString()
+        }
+
+        viewModel.getResult().observe(viewLifecycleOwner, resultObserver)
 
         binding.convertButton.setOnClickListener {
             if (binding.dollarText.text.isNotEmpty()) {
                 viewModel.setAmount(binding.dollarText.text.toString())
-                binding.resultText.text = viewModel.getResult().toString()
             } else {
                 binding.resultText.text = "No Value"
             }
