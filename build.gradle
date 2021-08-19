@@ -41,4 +41,5 @@ ext {
     // App Dependencies - Add
     lifecycleVersion = "2.3.1"
     saveStateVersion = "1.1.0"
+    legacyVersion = "1.0.0"
 }

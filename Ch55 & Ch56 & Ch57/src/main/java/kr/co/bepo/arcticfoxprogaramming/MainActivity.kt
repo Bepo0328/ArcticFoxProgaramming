@@ -25,7 +25,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         setSupportActionBar(binding.toolbar)
-        
+
         binding.collapsingToolbar.title = "My Toolbar Title"
         binding.collapsingToolbar.setContentScrimColor(Color.GREEN)
 
