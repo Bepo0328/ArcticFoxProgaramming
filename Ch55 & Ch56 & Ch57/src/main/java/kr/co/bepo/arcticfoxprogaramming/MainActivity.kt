@@ -1,5 +1,6 @@
 package kr.co.bepo.arcticfoxprogaramming
 
+import android.graphics.Color
 import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
@@ -24,6 +25,9 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         setSupportActionBar(binding.toolbar)
+        
+        binding.collapsingToolbar.title = "My Toolbar Title"
+        binding.collapsingToolbar.setContentScrimColor(Color.GREEN)
 
         layoutManager = LinearLayoutManager(this)
         binding.contentMain.recyclerView.layoutManager = layoutManager
