@@ -20,4 +20,8 @@ class MainActivity : AppCompatActivity() {
             text_view.text = getString(R.string.no_value)
         }
     }
+
+    fun sendText(view: View) {}
+    fun sendText(view: View) {}
+    fun sendText(view: View) {}
 }
