@@ -30,4 +30,5 @@ class MainActivity : AppCompatActivity() {
     fun showTime(view: View) {}
     fun sendMessage(view: View) {}
     fun sendNotification(view: View) {}
+    fun sendNotification(view: View) {}
 }
