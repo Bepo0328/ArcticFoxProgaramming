@@ -27,4 +27,5 @@ class MainActivity : AppCompatActivity() {
     fun showWebPage(view: View) {}
     fun showWebPage(view: View) {}
     fun buttonClick(view: View) {}
+    fun showTime(view: View) {}
 }
