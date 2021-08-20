@@ -26,4 +26,5 @@ class MainActivity : AppCompatActivity() {
     fun sendText(view: View) {}
     fun showWebPage(view: View) {}
     fun showWebPage(view: View) {}
+    fun buttonClick(view: View) {}
 }
