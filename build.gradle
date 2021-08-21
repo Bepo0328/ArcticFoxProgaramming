@@ -43,4 +43,6 @@ ext {
     saveStateVersion = "1.1.0"
     legacyVersion = "1.0.0"
     coroutinesVersion = "1.5.1"
+    roomVersion = "2.3.0"
+    fragmentVersion = "1.3.6"
 }
