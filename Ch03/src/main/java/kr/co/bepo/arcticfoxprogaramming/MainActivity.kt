@@ -34,4 +34,5 @@ class MainActivity : AppCompatActivity() {
     fun newFile(view: View) {}
     fun openFile(view: View) {}
     fun saveFile(view: View) {}
+    fun enterPipMode(view: View) {}
 }
