@@ -35,4 +35,7 @@ class MainActivity : AppCompatActivity() {
     fun openFile(view: View) {}
     fun saveFile(view: View) {}
     fun enterPipMode(view: View) {}
+    fun playAudio(view: View) {}
+    fun recordAudio(view: View) {}
+    fun stopAudio(view: View) {}
 }
