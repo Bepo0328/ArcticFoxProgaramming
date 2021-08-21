@@ -31,4 +31,7 @@ class MainActivity : AppCompatActivity() {
     fun sendMessage(view: View) {}
     fun sendNotification(view: View) {}
     fun sendNotification(view: View) {}
+    fun newFile(view: View) {}
+    fun openFile(view: View) {}
+    fun saveFile(view: View) {}
 }

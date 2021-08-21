@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Ch78</string>
+    <string name="create">Create</string>
+    <string name="open">Open</string>
+    <string name="save">Save</string>
+    <string name="name">Name</string>
+</resources>
