@@ -46,4 +46,5 @@ ext {
     coroutinesVersion = "1.5.1"
     roomVersion = "2.3.0"
     fragmentVersion = "1.3.6"
+    sqliteassethelperVersion = "2.0.1"
 }
