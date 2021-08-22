@@ -38,4 +38,5 @@ class MainActivity : AppCompatActivity() {
     fun playAudio(view: View) {}
     fun recordAudio(view: View) {}
     fun stopAudio(view: View) {}
+    fun printDocument(view: View) {}
 }
