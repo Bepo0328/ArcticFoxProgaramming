@@ -3,7 +3,6 @@ package kr.co.bepo.arcticfoxprogaramming
 import android.os.Bundle
 import android.view.View
 import androidx.appcompat.app.AppCompatActivity
-import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -12,24 +11,20 @@ class MainActivity : AppCompatActivity() {
     }
 
     fun convertCurrency(view: View) {
-        if (dollar_text.text.isNotEmpty()) {
-            val dollarValue = dollar_text.text.toString().toFloat()
-            val euroValue = dollarValue * 0.85f
-            text_view.text = euroValue.toString()
-        } else {
-            text_view.text = getString(R.string.no_value)
-        }
+//        if (dollar_text.text.isNotEmpty()) {
+//            val dollarValue = dollar_text.text.toString().toFloat()
+//            val euroValue = dollarValue * 0.85f
+//            text_view.text = euroValue.toString()
+//        } else {
+//            text_view.text = getString(R.string.no_value)
+//        }
     }
 
     fun sendText(view: View) {}
-    fun sendText(view: View) {}
-    fun sendText(view: View) {}
-    fun showWebPage(view: View) {}
     fun showWebPage(view: View) {}
     fun buttonClick(view: View) {}
     fun showTime(view: View) {}
     fun sendMessage(view: View) {}
-    fun sendNotification(view: View) {}
     fun sendNotification(view: View) {}
     fun newFile(view: View) {}
     fun openFile(view: View) {}
@@ -40,4 +35,7 @@ class MainActivity : AppCompatActivity() {
     fun stopAudio(view: View) {}
     fun printDocument(view: View) {}
     fun authenticateUser(view: View) {}
+    fun launchFeature(view: View) {}
+    fun installFeature(view: View) {}
+    fun deleteFeature(view: View) {}
 }

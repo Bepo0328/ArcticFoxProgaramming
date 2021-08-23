@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="title_my_dynamic_feature">My Example Dynamic Feature</string>
+    <string name="my_dynamic_feature_module">My Dynamic Feature Module</string>
+</resources>

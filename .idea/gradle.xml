@@ -53,6 +53,8 @@
             <option value="$PROJECT_DIR$/Ch86" />
             <option value="$PROJECT_DIR$/Ch88" />
             <option value="$PROJECT_DIR$/Ch90" />
+            <option value="$PROJECT_DIR$/Ch93" />
+            <option value="$PROJECT_DIR$/my_dynamic_feature" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />
