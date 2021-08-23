@@ -78,7 +78,11 @@ class MainActivity : AppCompatActivity() {
                     }
 
                     SplitInstallSessionStatus.DOWNLOADING -> {
-
+                        val size = state.totalBytesToDownload()
+                        val downloaded = state.bytesDownloaded()
+                        binding.statusText.text =
+                            String.format(Locale.getDefault(),
+                                "%d of %d bytes downloaded.", downloaded, size)
                     }
 
                     SplitInstallSessionStatus.INSTALLING ->
